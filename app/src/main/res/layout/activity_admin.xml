@@ -7,4 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".Admin">
 
+    <FrameLayout
+        android:id="@+id/presionableCuadro"
+        android:layout_width="136dp"
+        android:layout_height="125dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/darker_gray"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imagenCuadro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/agregar_usuario"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/textoCuadro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingBottom="10dp"
+            android:text="Texto debajo de la imagen" />
+
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
