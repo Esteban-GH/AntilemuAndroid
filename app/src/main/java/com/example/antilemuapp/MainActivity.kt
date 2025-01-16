@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         var pass : EditText = findViewById(R.id.txt_pass)
         var ingresar : Button = findViewById(R.id.btn_ingresar)
 
+        ingresar.setOnClickListener{
+
+        }
+
 
     }
 }
