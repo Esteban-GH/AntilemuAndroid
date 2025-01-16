@@ -1,5 +1,6 @@
 package com.example.antilemuapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -19,7 +20,9 @@ class MainActivity : AppCompatActivity() {
         var ingresar : Button = findViewById(R.id.btn_ingresar)
 
         ingresar.setOnClickListener{
-
+            val intent = Intent(this, Admin::class.java)
+            startActivity(intent)
+            finish()
         }
 
 
